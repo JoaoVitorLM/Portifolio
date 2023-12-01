@@ -1,8 +1,8 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom"
-import Home from "../pages/Home";
 import Projects from "../pages/projects";
 import Contacts from "../pages/contacts";
+import Home from "../pages/home";
 
 export default function Rotas() {
     return(
