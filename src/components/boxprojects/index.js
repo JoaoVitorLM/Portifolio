@@ -1,21 +1,33 @@
+import React from "react"
+import { Box, BoxButton, BoxDesc, ButtonCode, ButtonVisit, Card, Desc, Img, Name } from "./styled"
+import { Project } from "../../utils/projects"
 
-import { Box, Boximg, ButtonProjects, Name, Tecs } from "./styled";
 
-export default function BoxProject({objeto,route,code,image}) {
+export default function Cards() {
     return (
         <>
             <Box>
-            {objeto.map(item => {
-                return (
-                    <>
-                        <Boximg><img src={image} width={340} height={230}/></Boximg>
-                        <Name>{item.name}</Name>
-                        <Tecs>{item.tec}</Tecs>
-                        <a href={code}><ButtonProjects>CÓDIGO</ButtonProjects></a>
-                        <a href={route}><ButtonProjects>PROJETO</ButtonProjects></a>
-                    </>
-                )                
-            })}
+                {Project.map(item => {
+                    return (
+                        <>
+                            <Card>
+                                <Img src={item.pic}/>
+                                <Name>{item.title}</Name>
+                                <BoxDesc>
+                                    <Desc>{item.desc}</Desc>
+                                </BoxDesc>
+                                <BoxButton>
+                                    <a href={item.git}>
+                                        <ButtonCode>CÓDIGO</ButtonCode>
+                                    </a>
+                                    <a href={item.path}>
+                                        <ButtonVisit>VISITA</ButtonVisit>
+                                    </a>
+                                </BoxButton>
+                            </Card>
+                        </>
+                    )
+                })}
             </Box>
         </>
     )

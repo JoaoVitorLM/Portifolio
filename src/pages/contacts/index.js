@@ -6,7 +6,6 @@ export default function Contacts() {
     return(
         <>
             <HeaderCuston/>
-            <SectionContacts>
                 <ContainerContacts>
                         <H1>CONTATE-ME</H1>
                     <ContainerInfos>
@@ -15,14 +14,13 @@ export default function Contacts() {
                         placeholder="Name"/>                   
                         <InputCuston  
                         type="Name" 
-                        placeholder="Email;"/>                   
+                        placeholder="Email"/>                   
                         <InputCuston  
                         type="text" 
-                        placeholder="mensagem"/>
+                        placeholder="Mensagem"/>
                         <ButtonCuston>ENVIAR</ButtonCuston>                   
                     </ContainerInfos>
                 </ContainerContacts>
-            </SectionContacts>
         </>
     )
 }

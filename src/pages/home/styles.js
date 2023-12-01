@@ -1,95 +1,73 @@
 import styled  from "styled-components"
+import imageIA from "../../assets/images/FotoIA.png.jpeg"
 
-export const SectionBodyHome = styled.header`
-   width: 100%;
-`
-export const SectionHome = styled.header`
-    max-width: 1050px;
-    height: 829px;
-    margin: auto;    
+
+export const ContainerAbout = styled.section`
+    max-width: 1200px;
+    min-height: 600px;
+    margin-left: 40px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-`
-export const BoxText= styled.div`
-   max-width: 500px;
-   min-height: 500px;
-   display: flex;
-   flex-direction: column;
-   color: white;
-`
-export const H1 = styled.h1`
-   font-size: 83px;
-   letter-spacing: 2px;
-   font-weight: 300;
-   margin-bottom: 0px;
-   border-left: 1px solid rgba(44, 0, 201, 1);
-`
-export const H2= styled.h2`
-    margin-top: 0px;
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin-bottom: 17px;
-    margin-left: 30px;
-    margin-left: 9px ;
-`
-export const H3= styled.h3`
-   font-size: 19px;
-   letter-spacing: 9px;
-   margin-top: 0px;
-   margin-left: 4px;
-   border-bottom: 2px solid rgba(44, 0, 201, 1);
-   `
-export const BoxLinks = styled.div`
-   max-width: 340px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
-   margin-left: 50px;
-   margin-top: 6px;
-`
-export const ButtonCv = styled.button`
-   width: 177px;
-   height: 49px;
-   border: 2px solid black;
-   border-radius: 9px;
-   background-color: rgb(245, 250, 250);
-   font-size: 16px;
-   font-weight: 600;
-   box-shadow: 0 0 5px rgb(0, 173, 252), 0 0 10px rgb(0, 173, 252) ;
-   &:hover{
-      box-shadow: 0 0 5px rgb(0, 173, 252),
-      0 0 15px rgb(0, 173, 252), 0 0 40px rgb(0, 173, 252);
-      transition: all 0.6s ease 0s;
-   }
-   cursor: pointer;
-`
-export const BoxSocials = styled.div`
-   width: 50px;
-   height: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: white;
-   border-radius: 40px;
-   border: 3px solid black;
-   box-shadow: 0 0 5px rgb(0, 173, 252), 0 0 10px rgb(0, 173, 252) ;
-   &:hover{
-      box-shadow: 0 0 5px rgb(0, 173, 252),
-      0 0 15px rgb(0, 173, 252), 0 0 40px rgb(0, 173, 252);
-      transition: all 0.6s ease 0s; 
-   }
+    justify-content: space-around;
+    margin-top: 47px;
 
+    @media screen and (max-width: 950px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 `
-export const SpanColor = styled.span`
-   color: rgba(44, 0, 201, 1);
+export const BoxImg = styled.div`
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    background-image: url(${imageIA});
+    background-size: cover;
+
+    @media screen and (max-width: 950px) {
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 545px) {
+        width: 320px;
+        height: 320px;
+    }
 `
-export const A = styled.a`
-   text-decoration: none;
-   color: black;
+export const ContainerTechnologies = styled.div`
+    max-width: 500px;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+
+    @media screen and (max-width: 950px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 545px) {
+        display: flex;
+        flex-direction: column;
+    }
+`
+export const Technologies = styled.div`  
+    animation: float 5s ease-in-out infinite;
+
+    @keyframes float {
+        0%{
+            transform: translatey(0px);
+        }
+        50%{
+            transform: translatey(-16px);
+        }
+        100%{
+            transform: translatey(0px);
+        }  
+    };
 `
 
 
-  

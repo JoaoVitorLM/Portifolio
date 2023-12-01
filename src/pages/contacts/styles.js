@@ -1,20 +1,26 @@
 import styled  from "styled-components"
 
-export const SectionContacts = styled.section`
-   width: 100%;
-   margin-top: 100px;
-`
 export const ContainerContacts = styled.section`
    max-width: 1000px;
-   min-height: 600px;
-   background-color: #171717;
-   border: 2px solid black;
+   min-height: 440px;
+   background-color: transparent;
+   border: 1px solid #DBE2EF;
    border-radius: 20px;
-   box-shadow: 15px 10px 12px black;
+   box-shadow: 0px 0px 12px black;
    margin: auto;
+   margin-top: 170px;
+
+   @media screen and (max-width: 1040px) {
+      max-width: 600px;
+      min-height: 440px;
+   }
+   @media screen and (max-width: 620px) {
+      max-width: 380px;
+      min-height: 440px;
+   }
 `
 export const H1 = styled.h1`
-   color: rgb(0, 173, 252);
+   color: #DBE2EF;
    font-weight: 600;
    font-size: 28px;
    text-align: center;
@@ -26,23 +32,37 @@ export const ContainerInfos = styled.div`
    margin: auto;
 `
 export const InputCuston = styled.input`
-   max-width: 400px;
-   min-height: 50px;
-   border: 1px solid rgb(0, 173, 252);
-   background-color: black;
+   padding: 20px 20px;
+   background-color: transparent;
+   border: 1px solid #DBE2EF;
    border-radius: 10px;
-   color: white;
    margin-top: 22px;
+   color: #DBE2EF;
+
+   @media screen and (max-width: 620px) {
+      margin: auto;
+      width: 300px;
+      height: 10px;
+      margin-top: 20px;
+   }
 `
 export const ButtonCuston = styled.button`
    width: 200px;
    height: 50px;
    border: none;
-   background-color: rgb(0, 173, 252);
+   background-color: #5D12D2;
    border-radius: 10px;
-   color: white;
+   color: #DBE2EF;
    margin: auto;
    margin-top: 25px;
+   font-size: 15px;
    font-weight: 600;
    cursor: pointer;
+
+   &:hover{
+      color: white;
+      box-shadow:  0px 0px 6px #DBE2EF;
+      transition: 0.4s ease;
+   }
+
 `

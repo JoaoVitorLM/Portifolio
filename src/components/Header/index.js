@@ -12,9 +12,6 @@ export default function HeaderCuston() {
                     <Link to='/'> 
                         <Li>Home</Li>
                     </Link> 
-                    <Link to='/about'>
-                        <Li>Sobre</Li>
-                    </Link>
                     <Link to='/projects'>
                         <Li>Projetos</Li>
                     </Link>

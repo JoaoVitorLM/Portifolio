@@ -1,43 +1,26 @@
 import React from "react";
 import HeaderCuston from "../../components/Header";
-import {A, BoxLinks, BoxSocials, BoxText, ButtonCv, H1, H2, H3, Link, SectionBodyHome, SectionHome, SpanColor } from "./styles";
-import { AiFillGithub } from "react-icons/ai";
-import { BiLogoLinkedin } from "react-icons/bi";
-import gif from "../../assets/videos/laptop.gif"
-
-
-
-
+import { BoxAbout, BoxColumn, BoxImg, ContainerAbout, ContainerTechnologies, H1, H3, P, SectionAbout, Technologies } from "./styles";
+import { BiLogoReact, BiLogoTypescript, BiLogoFirebase } from "react-icons/bi";
+import { DiNodejsSmall } from "react-icons/di";
+import { DiSass } from "react-icons/di";
+import Infos from "../../components/boxsocial";
 
 export default function Home() {
-    return(
+    return (
         <>
-        <SectionBodyHome>
-            <HeaderCuston/>
-            <SectionHome>
-                <BoxText>
-                    <H1>Hello<SpanColor>.</SpanColor></H1>
-                    <H2>I`am João Vitor Lorenzeti</H2>
-                    <H3>Desenvolvedor Front-End</H3>
-                    <BoxLinks>
-                        <ButtonCv> 
-                            <A href="">Download CV</A>
-                        </ButtonCv>
-                        <BoxSocials> 
-                            <A href="https://github.com/JoaoVitorLM"> 
-                                <AiFillGithub size={50} color="black" href=""/>
-                            </A> 
-                        </BoxSocials>
-                        <BoxSocials> 
-                            <A href="https://www.linkedin.com/in/joaolm/"> 
-                                <BiLogoLinkedin size={38} color="black"/>
-                            </A>
-                        </BoxSocials> 
-                    </BoxLinks>                   
-                </BoxText>
-                <img src={gif} alt="laptop"></img>
-            </SectionHome>
-        </SectionBodyHome>    
+            <HeaderCuston />
+            <ContainerAbout>
+                <Infos />
+                <BoxImg/>
+            </ContainerAbout>
+            <ContainerTechnologies>
+                <Technologies><BiLogoReact size={90} color="#DBE2EF" /></Technologies>
+                <Technologies><BiLogoTypescript size={90} color="#DBE2EF" /></Technologies>
+                <Technologies><DiNodejsSmall size={90} color="#DBE2EF" /></Technologies>
+                <Technologies><BiLogoFirebase size={90} color="#DBE2EF" /></Technologies>
+                <Technologies><DiSass size={90} color="#DBE2EF" /></Technologies>
+            </ContainerTechnologies>
         </>
     )
 }
