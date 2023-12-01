@@ -3,7 +3,7 @@ import styled  from "styled-components"
 export const ContainerContacts = styled.section`
    max-width: 1000px;
    min-height: 440px;
-   background-color: transparent;
+   background-color: rgba(17,45,78,1);
    border: 1px solid #DBE2EF;
    border-radius: 20px;
    box-shadow: 0px 0px 12px black;

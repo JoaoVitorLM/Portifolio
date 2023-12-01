@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderCuston from "../../components/Header";
-import { ButtonCuston, ContainerContacts, ContainerInfos, H1, InputCuston, SectionContacts } from "./styles";
+import { ButtonCuston, ContainerContacts, ContainerInfos, H1, InputCuston} from "./styles";
 
 export default function Contacts() {
     return(

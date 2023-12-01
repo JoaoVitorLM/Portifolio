@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Li, Logo, Ul } from "../Header/styles";
+import { Container, Header, Li, Logo} from "../Header/styles";
 import { Link } from "react-router-dom";
 
 export default function HeaderCuston() {
